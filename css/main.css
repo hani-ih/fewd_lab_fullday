@@ -1,6 +1,5 @@
 body {
   font-family: 'Nunito', Arial, sans-serif;
-  font-size: 12px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,16 +24,163 @@ For banner over lay add this class to your div
   </div>
 </div>
 */
-.banner__container {
+#menu{
+  display:flex;
+  justify-content: space-between;
+  padding:20px;
+}
+
+#menu nav a{
+  color:black;
+  text-decoration: none;
+  padding:10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#banner{
+  background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg);
+  height: 660px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 
-.banner__container:before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.4);
-  content: "";
+.banner-content{
+  background:transparent;
+  width:500px;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner-content h1{
+  font-size:70px;
+  color:white;
+}
+
+.banner-content p{
+  color:white;
+  font-size: 20px;
+  text-align: center;
+  margin-top:1px;
+  font-weight: bold;
+}
+
+.banner-content button{
+  color:white;
+  background-color:rgb(242, 73, 73);
+  border-radius: 6px;
+  padding:15px 50px;
+  font-size:20px;
+  font-weight: bold;
+  border-style: none;
+}
+
+#search{
+  display: flex;
+  justify-content: space-around;
+  padding:30px; 
+}
+
+.box h3{
+  color:black;
+  background:lightgrey;
+  padding: 15px;
+  width: 800px;
+}
+
+.box-content {
+  color:black;
+  background:white;
+  width:800px;
+  padding:20px;
+  display:flex;
+  justify-content: space-between;
+
+}
+
+.box-content p{
+  margin-left:30px;
+}
+
+.box-content img{
+  width:120px;
+
+}
+
+#middle{
+  background: lightgrey;
+}
+
+.middle-title{
+  text-align: center;
+  padding-top: 70px;
+
+}
+
+.middle-title h1{
+  margin-bottom: 20px;
+  font-size:50px;
+}
+
+.grid{
+  display: grid;
+  grid-gap:30px;
+  padding:40px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid__3{
+  grid-template-columns: repeat(3, 1fr);
+  
+}
+
+.img__responsive img{
+  width: 100%;
+}
+
+.bg__white{
+  background-color: white;
+  width:500px;
+  height:400px;
+  box-shadow: 0 3px 10px rgb(181, 181, 181);
+}
+
+.container{
+  width: 100%;
+}
+
+.img-content{
+  background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg);
+  background-repeat: no-repeat;
+}
+
+.desc{
+  font-weight:bold;
+  font-size:15px;
+  padding:10px;
+  text-align: center;
+}
+
+button{
+  margin-bottom: 50px;
+  border:none;
+  background-color:rgb(220, 96, 74);
+  padding:15px 50px;
+  color:white;
+  font-size:20px;
+  border-radius: 6px;
+}
+
+footer{
+  background:black;
+  background-size:100%;
+  color:white;
+  padding:20px;
 }
